@@ -15,3 +15,5 @@ app.use("/", router)
 app.listen(8000, () => {
     console.log("App listening on port 8000")
 })
+
+export default app
