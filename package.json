@@ -1,0 +1,19 @@
+{
+  "name": "bytespeed",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.5",
+    "express": "^5.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "prisma": "^6.19.0",
+    "zod": "^4.1.12"
+  }
+}
