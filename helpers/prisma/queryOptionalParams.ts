@@ -1,15 +1,15 @@
 import type z from "zod";
 
-export function whereClauseReturner(parsedData: z.ZodSafeParseResult<{
-    email?: string | undefined;
-    phoneNumber?: number | undefined;
+export function whereClauseReturner(parsedData: z.ZodSafeParseSuccess<{
+    email?: string | null | undefined;
+    phoneNumber?: string | null | undefined;
 }>) {
-    let res: any = {}
+    let res: any = []
     if (parsedData.data?.email) {
-        res.email = parsedData.data?.email
+        res.push({ email: parsedData.data?.email })
     }
     if (parsedData.data?.phoneNumber) {
-        res.phoneNumber = parsedData.data?.phoneNumber.toString()
+        res.push({ phoneNumber: parsedData.data.phoneNumber?.toString() })
     }
     return res
 }
