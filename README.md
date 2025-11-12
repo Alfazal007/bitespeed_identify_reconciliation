@@ -1,4 +1,3 @@
-```markdown
 # Bytespeed assignment
 
 ## Getting Started
@@ -51,4 +50,5 @@ Live application: [http://35.78.246.156:8000/identify](http://35.78.246.156:8000
 - **Runtime**: Bun
 - **ORM**: Prisma
 - **Database**: PostgreSQL
-```
+
+
