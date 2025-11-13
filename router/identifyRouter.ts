@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { identifyHandler } from "../controller/identifyHandler";
+import { identifyController } from "../controller/identifyController";
 
 export const router = Router()
 
-router.route("/identify").post(identifyHandler)
+router.route("/identify").post(identifyController)
